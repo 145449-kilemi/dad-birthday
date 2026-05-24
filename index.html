@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy 56th Birthday Dad ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+      color:white;
+      overflow-x:hidden;
+    }
+
+    section{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      text-align:center;
+      padding:40px 20px;
+    }
+
+    .hero h1{
+      font-size:4rem;
+      margin-bottom:20px;
+      animation:fadeIn 2s ease;
+    }
+
+    .hero p{
+      font-size:1.3rem;
+      max-width:700px;
+      line-height:1.8;
+      opacity:0.95;
+    }
+
+    .heart{
+      color:#ff4d6d;
+      animation:pulse 1.5s infinite;
+    }
+
+    .button{
+      margin-top:35px;
+      padding:15px 35px;
+      border:none;
+      border-radius:50px;
+      background:#ff4d6d;
+      color:white;
+      font-size:1rem;
+      cursor:pointer;
+      transition:0.3s ease;
+      box-shadow:0 10px 25px rgba(255,77,109,0.4);
+    }
+
+    .button:hover{
+      transform:scale(1.05);
+      background:#ff3358;
+    }
+
+    .message-box{
+      max-width:900px;
+      background:rgba(255,255,255,0.08);
+      padding:40px;
+      border-radius:25px;
+      backdrop-filter:blur(10px);
+      line-height:2;
+      font-size:1.1rem;
+      margin-top:20px;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+      width:100%;
+      max-width:1100px;
+      margin-top:40px;
+    }
+
+    .gallery img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+      border-radius:20px;
+      transition:0.4s ease;
+      box-shadow:0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    .gallery img:hover{
+      transform:scale(1.03);
+    }
+
+    .quote{
+      font-size:2rem;
+      max-width:800px;
+      line-height:1.8;
+      font-weight:300;
+    }
+
+    .footer{
+      padding:30px;
+      text-align:center;
+      background:rgba(255,255,255,0.05);
+    }
+
+    .surprise{
+      margin-top:25px;
+      font-size:1.2rem;
+      display:none;
+      color:#ffd166;
+      animation:fadeIn 1s ease;
+    }
+
+    .floating-hearts{
+      position:fixed;
+      width:100%;
+      height:100%;
+      pointer-events:none;
+      top:0;
+      left:0;
+      overflow:hidden;
+      z-index:-1;
+    }
+
+    .floating-hearts span{
+      position:absolute;
+      display:block;
+      color:rgba(255,255,255,0.15);
+      animation:float 10s linear infinite;
+      bottom:-150px;
+      font-size:25px;
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(20px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    @keyframes pulse{
+      0%{
+        transform:scale(1);
+      }
+      50%{
+        transform:scale(1.2);
+      }
+      100%{
+        transform:scale(1);
+      }
+    }
+
+    @keyframes float{
+      0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:0;
+      }
+
+      10%{
+        opacity:1;
+      }
+
+      100%{
+        transform:translateY(-120vh) rotate(360deg);
+        opacity:0;
+      }
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:2.5rem;
+      }
+
+      .hero p{
+        font-size:1rem;
+      }
+
+      .quote{
+        font-size:1.5rem;
+      }
+
+      .message-box{
+        padding:25px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="floating-hearts">
+  <span style="left:10%; animation-delay:0s;">❤️</span>
+  <span style="left:25%; animation-delay:2s;">❤️</span>
+  <span style="left:40%; animation-delay:4s;">❤️</span>
+  <span style="left:60%; animation-delay:1s;">❤️</span>
+  <span style="left:80%; animation-delay:5s;">❤️</span>
+</div>
+
+<section class="hero">
+
+  <h1>
+    Happy 56th Birthday Dad
+    <span class="heart">❤️</span>
+  </h1>
+
+  <p>
+    Today is all about celebrating you — your kindness, your strength,
+    your sacrifices, your wisdom, and the incredible father and husband  you have been.
+    Thank you for everything you do and for always loving us the way you do.
+  </p>
+
+  <button class="button" onclick="goToMessage()">
+    Open Your Birthday Surprise 🎁
+  </button>
+
+</section>
+
+<section id="message">
+
+  <h1>A Letter To My Dad 💌</h1>
+
+  <div class="message-box">
+
+    Dear Dad,
+    <br><br>
+
+    Happy 56th Birthday! 🎉
+    <br><br>
+
+    We just want you to know how much we love and appreciate you.
+    Thank you for your endless support, your guidance, your sacrifices,
+    and all the quiet ways you show your love every single day.
+
+    <br><br>
+
+    You have always been one of our greatest blessings and one of the strongest people we know.
+
+    <br><br>
+
+    Thank you for working hard for our family, for believing in us,
+    and for always encouraging us even when things were difficult.
+
+    <br><br>
+
+    We admire your strength, your wisdom, your height, and your heart.
+
+    <br><br>
+
+    We hope this year brings you happiness, peace, good health, laughter,
+    and everything beautiful you deserve.
+
+    <br><br>
+
+    We love you so much Dad ❤️
+
+    <br><br>
+
+    — Kilemi Family ✨
+
+  </div>
+
+</section>
+
+<section>
+
+  <h1>Our Memories Together 📸</h1>
+
+  <p style="margin-top:15px; opacity:0.8;">
+    Some of our favorite memories with you ❤️
+  </p>
+
+  <div class="gallery">
+
+    <img src="photo1.jpg" alt="Memory 1">
+
+    <img src="photo2.jpg" alt="Memory 2">
+
+    <img src="photo3.jpg" alt="Memory 3">
+
+    <img src="photo4.jpg" alt="Memory 4">
+
+    <img src="photo5.jpeg" alt="Memory 5">
+
+    <img src="photo6.jpeg" alt="Memory 6">
+
+    <img src="photo7.jpg" alt="Memory 7">
+
+    <img src="photo8.jpg" alt="Memory 8">
+
+    <img src="photo9.jpg" alt="Memory 9">
+  </div>
+
+</section>
+
+<section>
+
+  <div class="quote">
+    “A father is someone you look up to no matter how tall you grow.” ❤️
+  </div>
+
+  <button class="button" onclick="showSurprise()">
+    Click For One More Surprise ✨
+  </button>
+
+  <div class="surprise" id="surpriseText">
+
+    Thank you for being our hero, our protector,
+    our guide, and our biggest supporter.
+
+    <br><br>
+
+    We will always be grateful for you Dad.
+    Happy Birthday ❤️
+
+  </div>
+
+</section>
+
+<section>
+
+  <h1>56 Looks Good On You 🎂</h1>
+
+  <p style="max-width:700px; line-height:2; margin-top:20px;">
+
+    May your life continue to be filled with joy,
+    love, peace, success, health, and unforgettable memories.
+
+    <br><br>
+
+    Today we celebrate YOU ❤️
+
+  </p>
+
+</section>
+
+<div class="footer">
+  Made with love ❤️
+</div>
+
+<script>
+
+  function goToMessage(){
+    document.getElementById('message').scrollIntoView({
+      behavior:'smooth'
+    });
+  }
+
+  function showSurprise(){
+    document.getElementById('surpriseText').style.display='block';
+  }
+
+</script>
+
+</body>
+</html>
